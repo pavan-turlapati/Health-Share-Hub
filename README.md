@@ -14,8 +14,8 @@
 - 3 Username: user02 Password: true1234
 
 # information about seeded database
-- we have added 20 users 
-- We have added 20 diseases
+- Added 20 users 
+- Added 20 diseases
 - Disease names in the seeded file are Tuberculosis, Diabetes, Epilepsy, Skin Cancer, ACL Injury, Hypertension, Heart Disease, Asthma, Gout, Hyperlipidemia, Malaria, Chicken pox, Covid 19, Alzheimer's, Small Pox, Lung Cancer, Cirrhosis, Polio, Chronic Kidney Disease, Cystic Fibrosis
 - We have added 20 posts, 42 comments, several thumbs-up and thumbs-down for the first four forums.
 - The disease names of the forums with seeded posts and comments are Tuberculosis, Diabetes, Epilepsy, Skin Cancer.
