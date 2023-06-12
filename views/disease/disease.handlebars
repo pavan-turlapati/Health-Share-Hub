@@ -1,0 +1,75 @@
+<main class="mainDisease">
+    <div class="row featurette">
+            <div class="col-md-7">
+                 <div class="p-2">
+{{#if diseaseName }}
+<h1>
+    {{diseaseName}}
+</h1>
+{{/if}}
+
+{{#if description }}
+<dl>
+    <dt class="DD">
+
+    Overview
+</dt>
+
+<dd>
+     {{description}}
+</dd>
+</dl>
+{{/if}}
+
+
+{{#if symptoms }}
+<h2>
+    Symptoms:
+</h2>
+<ul class="symptoms">
+    {{#each symptoms}}
+    <li><span>{{this}}</span></li>
+    {{/each}} 
+  </ul>
+{{/if}}
+
+
+{{#if suggestions }}
+<h2>
+    General Recommendations:
+</h2>
+<ul class="suggestions">
+    {{#each suggestions}}
+    <li><span>{{this}}</span></li>
+    {{/each}} 
+  </ul>
+{{/if}}
+
+
+{{#if medicines }}
+<h2>
+    Recommended Medicines:
+</h2>
+<ul class="medicines">
+    {{#each medicines}}
+    <li><span>{{this}}</span></li>
+    {{/each}} 
+  </ul>
+{{/if}}
+</div>
+</div>
+<div class="col-md-5">
+<div class="d-flex justify-content-center">
+
+<div class="d-flex flex-column">
+<div class="p-2"><h3>Advertisements</h3></div>
+  <div class="p-2"><a href="https://epilepsyawarenessday.org/product/afterthatdaysponsor/" target="_blank"><img src="/public/images/epilpsey.jpg" alt="Logo" width="300" height="300"></a></div>
+  <div class="p-2"><a href="https://www.facebook.com/CDCTB/photos/drawing-on-his-tb-research-and-public-health-expertise-dr-michael-lauzardo-from-/2766819486911261/" target="_blank"><img src="/public/images/Tuber.png" alt="Logo" width="300" height="300"></a></div>
+  <div class="p-2"><a href=" https://www.ssmhealth.com/diabetes" target="_blank"><img src="/public/images/Diabetes.jpg" alt="Logo" width="300" height="300"></a></div>
+</div>
+
+</div>
+    </div>
+    </div>
+
+</main>

@@ -1,0 +1,122 @@
+<link href="/public/css/updateProfile.css" rel="stylesheet">
+<div class="container bootstrap snippets bootdeys">
+<div class="row">
+  <div class="col-xs-12 col-sm-9">
+    <form class="form-horizontal" id="form-horizontal" method="POST" action="/updateProfile" enctype="multipart/form-data">
+      <br/><br/>
+         <div class="form__message form__message--error"></div>
+        <div class="panel panel-default">
+          <div class="panel-body text-center">
+            {{#if profilePicture}}
+            <img src="../public/images/users/{{profilePicture}}" class="img-circle profile-avatar" alt="User avatar">
+            {{else}}
+            <img src="../public/images/users/avatar-profile.jpeg" class="img-circle profile-avatar" alt="User avatar">
+            {{/if}}
+            <label for="profilePicture"> Upload Profile: </label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+          </div>
+        </div>
+        <div class="updateError"><p>{{error}}</p></div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+        <h1 class="panel-title">User info</h1>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="firstName">Firstname</label>
+            <div class="col-sm-10">
+                <input type="text" id="firstName" class="form-control" value={{ firstName }}  name="firstName" required>
+                <div class="form__input-error-message"></div>
+            </div>
+  
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="lastName">Lastname</label>
+            <div class="col-sm-10">
+              <input type="text" id="lastName" class="form-control" value= {{ lastName }} name="lastName" required>
+              <div class="form__input-error-message"></div>
+            </div>
+            
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for ="biography">Biography</label>
+            <div>
+              <textarea rows="3" cols="50" id="biography" class="form-control" name ="biography" required>{{ biography }}</textarea>
+              <div class="form__input-error-message"></div>
+            </div>
+            
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="gender">Gender</label>
+            <div class="col-sm-10">
+              <select class="form-control" name="gender" id="gender">
+                <option selected>{{gender}}</option>
+               {{#each genderList}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+              </select>
+              <div class="form__input-error-message"></div>
+            </div>
+            
+          </div>
+          
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="country">Country</label>
+            <div class="col-sm-10">
+              <select class="form-control" name="country" id="country">
+                <option selected>{{country}}</option>
+                {{#each countryNames}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+              </select>
+              <div class="form__input-error-message"></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+        <br/>
+        <br/>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+        <h1 class="panel-title">Contact info</h1>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="phoneNumber"> phoneNumber </label>
+            <div class="col-sm-10">
+              <input type="tel" id="phoneNumber" class="form-control" value= {{ phoneNumber }} name="phoneNumber" required>
+              <div class="form__input-error-message"></div>
+            </div>
+            
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="emailAddress">E-mail address</label>
+            <div class="col-sm-10">
+              <input type="email" id="emailAddress" class="form-control" value= {{ emailAddress }} name="emailAddress" required>
+             <div class="form__input-error-message"></div>
+            </div>
+           
+          </div>
+          <br/>
+          <br/>
+          <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <a class="btn btn-default" href="/profile" title="Click to return to Profile">Cancel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{!-- <input name= '_method' value="put" hidden/> --}}
+    </form>
+  </div>
+</div>
+</div>
+ <script src="/public/js/profile.js"></script>
+ {{!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script> --}}
+
+

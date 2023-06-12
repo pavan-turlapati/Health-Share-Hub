@@ -1,0 +1,33 @@
+{
+  "name": "share-n-care",
+  "version": "1.0.0",
+  "description": "This is Group project for Web programming 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "seed": "node task/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bansri01/share-n-care.git"
+  },
+  "author": "Bhavya_Shah Bansi_Patel Pallavi_Jaiswal Dongjing_Jia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bansri01/share-n-care/issues"
+  },
+  "homepage": "https://github.com/Bansri01/share-n-care#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "countries-list": "^2.6.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "moment": "^2.29.1",
+    "mongodb": "^4.2.0",
+    "multer": "^1.4.3",
+    "xss": "^1.0.10"
+  }
+}

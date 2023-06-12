@@ -1,0 +1,45 @@
+<main>
+ <nav class="navbar navbar-light bg-light">
+  <form class="form-inline" id="searchForm" method="POST" action="/forum/search">
+    <label for="searchPost">Search Posts</label>
+    <input class="form-control mr-sm-2" type="search" placeholder="keyword of post name" aria-label="Search" id="searchPost" name="postName">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchSubmit">Search</button>
+  </form>
+</nav>
+    <p class="errors" id="searchError"></p>
+<h1 class="pageTitle">{{forumName}}</h1>
+    {{#if hasError}}
+    <p class="errors">{{error}}</p>
+    {{/if}}
+
+    <form id="addNewPost" method="POST" action="/forum/{{getDiseaseId}}">
+        <label for="postTitle">Post title</label>
+        <input class="form-control" type="text" placeholder="The title of the post" id="postTitle" name="postTitle"/>
+        <p class="errors" id="postTitleError"></p>
+        <label for="postContent">Post content</label>
+        <textarea class="form-control" placeholder="The content of the post" id="postContent" name="postContent"></textarea>
+        <p class="errors" id="postContentError"></p>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" name="postSubmit">Post</button>
+    </form>
+
+
+    {{#if postList}}
+        <ul class = "searchPosts">
+            {{#each postList}}
+                <li>
+                    <a class="text-center" href="/forum/post/{{this._id}}">
+                        <h2>{{this.title}}</h2>
+                    </a>
+                        <p class="content">{{this.content}}</p>
+                        <p class="username">{{this.username}}</p>
+                        <p class="time">{{this.postTime}}</p>
+                </li>
+            {{/each}}
+        </ul>
+    {{/if}}
+</main>
+
+<link rel="stylesheet" href= "/public/css/forum.css">
+<script src="/public/js/forum.js"></script>
+
+

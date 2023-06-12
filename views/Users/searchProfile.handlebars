@@ -1,0 +1,17 @@
+<link href="/public/css/profile.css" rel="stylesheet">
+<div class = "profilebody">
+    <div class="card-container">
+        {{#if profilePicture}}
+            <img class="round" src="../public/images/users/{{profilePicture}}" alt="{{firstName}}" />
+        {{else}}
+            <img class="round" src="../public/images/users/avatar-profile.jpeg" alt="{{firstName}}" />
+        {{/if}}
+        <h1>{{firstName}} {{lastName}}</h1>
+        <p>{{country}}</p>
+        <p>{{biography}}</p>
+        <p class= "gender">Gender: {{gender}}</p>
+        <p class= "contact">Contact: {{phoneNumber}} <br> {{emailAddress}}</p>
+        <br/>
+        <br/>
+    </div>
+</div>

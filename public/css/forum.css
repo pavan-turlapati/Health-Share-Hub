@@ -1,0 +1,115 @@
+main {
+	max-width: 85%;
+	margin: auto;
+}
+
+.fa-thumbs-o-up {
+    color: green;
+    cursor: pointer
+}
+
+.fa-thumbs-o-down {
+    color: red;
+    cursor: pointer
+}
+
+h1.pageTitle {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    line-height: 1.428571429;
+    text-align: center;
+    color: #0d95e4;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: #0d95e4;
+}
+
+.btn-outline-success {
+    color: #00844f
+}
+
+h1.postTitle {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1.428571429;
+    color: #007cc0;
+}
+
+p.content {
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: black;
+}
+
+p.username {
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: blue;
+}
+
+p.time {
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #707070;
+}
+
+ul.searchPosts{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #007cc0;
+}
+
+textarea {
+    resize: none;
+}
+
+a:hover,
+a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+ }
+
+ li {
+     list-style-type:none;
+ }
+
+ .errors {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: red;
+ }
+
+.likes {
+    color:#0068f2
+}
+
+.dislikes {
+    color:#0068f2
+}
+
+.btn-link {
+    color:#0068f2
+}

@@ -1,0 +1,44 @@
+<div class = "nav1">
+    <form action="/" method="post" class="search" id ="searchDisease">
+    <label class="search_label" for="searchInput">Search Disease:</label>
+    <div class="disease_search">
+    <input type="text" class="form__input" placeholder="Search disease" name="searchDisease" id="searchInput"> 
+    <label for="Submitbutton1" class="d-none">Submit Button</label>
+    <button type="submit" class="diseaseButton" id="Submitbutton1"><i class="fa fa-search"></i></button>
+    </div>
+    <div id="error" class="hidden" ></div>
+</form>
+<div id="Second1" class="row">
+<div id="resultContainer"  class="hidden" >
+</div>
+</div>
+</div>
+
+<div class = "nav2">
+    <form action="/" method="post" class="search" id ="searchProfile">
+    <label class="search_label" for="profileSearchInput">Search User Profile:</label>
+    <div class="disease_search">
+    <input type="text" class="form__input" placeholder="Enter Username" name="searchProfile" id="profileSearchInput"> 
+    <label for="Submitbutton2" hidden>Submit Button</label>
+    <button type="submit" class="diseaseButton" id="Submitbutton2"><i class="fa fa-search"></i></button>
+    </div>
+    <div id="error2" class="hidden" ></div>
+</form>
+<div id="Second2" class="row">
+<div id="profileResultContainer"  class="hidden" >
+</div>
+</div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="/public/js/landing.js"></script>
+
+
+
+
+    {{!-- <script src="/public/js/Landing.js"></script> --}}
