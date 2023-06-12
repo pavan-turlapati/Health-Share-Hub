@@ -30,29 +30,29 @@ The Website will allow the user to sign up and create their profile. The User ca
 # 1. Landing Page: 
    The landing page has a search box for disease where user can search for a disease and get the information regarding that disease. It also has a search box for search profile where user can search other user's profile by entering their username. The page also has links to sign up and login if the user is not logged in. The user can view their profile if they are logged in.
 # 2. User Sign Up form: 
-    The sign up form collects user's information such as profile picture, their full name, contact information, location, gender and date of birth. User can register themselves using sign up form. 
+   The sign up form collects user's information such as profile picture, their full name, contact information, location, gender and date of birth. User can register themselves using sign up form. 
 # 3. Search Disease:
-    The user can search for the disease and get the information regarding the disease.
+   The user can search for the disease and get the information regarding the disease.
 # 4. Disease Page:
-    The disease page contains disease information such as common medicines, suggestions and symptoms. Users Can go to that disease forum using this page and post or look at other peoples comment.  
+   The disease page contains disease information such as common medicines, suggestions and symptoms. Users Can go to that disease forum using this page and post or look at other peoples comment.  
 # 5. Profile Page:
-    The profile page displays user's information such as user's name, location, gender, contact and their biography.
+   The profile page displays user's information such as user's name, location, gender, contact and their biography.
 # 6. Edit Profile:
-    The profile page also has an edit button where user's can edit their information and update it for their profile.
+   The profile page also has an edit button where user's can edit their information and update it for their profile.
 # 7. A forum for each disease:
-    Each disease has its own forum where users can post regarding the disease. Each post will have a title, content and also username of the user who posted it.
+   Each disease has its own forum where users can post regarding the disease. Each post will have a title, content and also username of the user who posted it.
 # 8. Like/Dislike of a Post in forum:
-    Users can like and dislike other user's posts in the forum.
+   Users can like and dislike other user's posts in the forum.
 # 9. Comment on a Post:
-    Users can comment on the posts in the forum.
+   Users can comment on the posts in the forum.
 
 # Extra Features
 
 # 1. Search Profile:
-    On landing page user can enter other user's username in the search profile box and search for thier profile.
+   On landing page user can enter other user's username in the search profile box and search for thier profile.
 # 2. Advertisement:
-    The application also diplays advrtisements on the disease Page.
+   The application also diplays advrtisements on the disease Page.
 # 3. Search Post:
-    In the forum, user can enter search terms in the search posts box on the top-left corner and get the post they are looking for.
+   In the forum, user can enter search terms in the search posts box on the top-left corner and get the post they are looking for.
 # 4. Like/Dislike of a comment:
-    User's can like and dislike other user's comments on a post in forum.
+   User's can like and dislike other user's comments on a post in forum.
